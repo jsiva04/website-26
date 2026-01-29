@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @theme {
   --font-zensult: 'Zensult', Impact, 'Arial Black', sans-serif;
   --font-thinking-square: 'Thinking Square', 'Comic Sans MS', cursive, sans-serif;
@@ -6,9 +8,64 @@
   --color-sticky-yellow: #ffdc83;
   --color-off-white: #faf9f6;
 
-  --shadow-brutal: 16px 16px 0px 0px black;
-  --shadow-brutal-hover: 20px 20px 0px 0px black;
-  --shadow-brutal-active: 12px 12px 0px 0px black;
+  --shadow-brutal: 1rem 1rem 0 0 black;
+  --shadow-brutal-hover: 1.25rem 1.25rem 0 0 black;
+  --shadow-brutal-active: 0.75rem 0.75rem 0 0 black;
+
+  /* Custom spacing values */
+  --spacing-7\.5: 1.875rem;
+  --spacing-15: 3.75rem;
+  --spacing-30: 7.5rem;
+  --spacing-35\.5: 8.875rem;
+  --spacing-164\.5: 41.125rem;
+  --spacing-310\.5: 77.625rem;
+  --spacing-626: 156.5rem;
+
+  /* Custom widths */
+  --width-126: 31.5rem;
+  --width-268: 67rem;
+  --width-281: 70.25rem;
+  --width-354: 88.5rem;
+  --width-455: 113.75rem;
+  --width-658: 164.5rem;
+
+  /* Custom heights */
+  --height-126: 31.5rem;
+  --height-234\.5: 58.625rem;
+  --height-268: 67rem;
+  --height-281: 70.25rem;
+  --height-303\.55: 75.8875rem;
+  --height-455: 113.75rem;
+
+  /* Custom font sizes */
+  --fontSize-350: 87.5rem;
+  --fontSize-250: 62.5rem;
+  --fontSize-180: 45rem;
+  --fontSize-130: 32.5rem;
+  --fontSize-120: 30rem;
+  --fontSize-100: 25rem;
+  --fontSize-80: 20rem;
+  --fontSize-75: 18.75rem;
+  --fontSize-60: 15rem;
+  --fontSize-50: 12.5rem;
+  --fontSize-40: 10rem;
+
+  /* Custom letter spacing */
+  --letterSpacing-10\.5: 0.65625rem;
+  --letterSpacing-5: 0.3125rem;
+  --letterSpacing-3\.9: 0.24375rem;
+  --letterSpacing-3: 0.1875rem;
+  --letterSpacing-2\.25: 0.140625rem;
+
+  /* Custom line heights */
+  --lineHeight-0\.8: 0.8;
+  --lineHeight-1\.11: 1.11;
+
+  /* Custom positions */
+  --inset-105: 26.25rem;
+  --inset-300\.5: 75.125rem;
+  --inset-533: 133.25rem;
+  --inset-540: 135rem;
 }
 
 @font-face {
@@ -33,11 +90,11 @@
 }
 
 @utility text-shadow-brutal {
-  text-shadow: 20px 20px 0px black;
+  text-shadow: 1.25rem 1.25rem 0 black;
 }
 
 @utility text-shadow-brutal-sm {
-  text-shadow: 10px 10px 0px black;
+  text-shadow: 0.625rem 0.625rem 0 black;
 }
 
 * {
