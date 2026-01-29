@@ -89,12 +89,49 @@
   font-display: swap;
 }
 
+/* Custom Utility Classes */
 @utility text-shadow-brutal {
   text-shadow: 1.25rem 1.25rem 0 black;
 }
 
 @utility text-shadow-brutal-sm {
   text-shadow: 0.625rem 0.625rem 0 black;
+}
+
+@utility border-brutal {
+  border: 0.25rem solid black;
+}
+
+@utility shadow-brutal {
+  box-shadow: 1rem 1rem 0 0 black;
+}
+
+@utility shadow-brutal-hover {
+  box-shadow: 1.25rem 1.25rem 0 0 black;
+}
+
+@utility shadow-brutal-active {
+  box-shadow: 0.75rem 0.75rem 0 0 black;
+}
+
+@utility font-zensult {
+  font-family: 'Zensult', Impact, 'Arial Black', sans-serif;
+}
+
+@utility font-thinking {
+  font-family: 'Thinking Square', 'Comic Sans MS', cursive, sans-serif;
+}
+
+@utility bg-primary {
+  background-color: #6394ff;
+}
+
+@utility bg-sticky {
+  background-color: #ffdc83;
+}
+
+@utility text-offwhite {
+  color: #faf9f6;
 }
 
 * {
