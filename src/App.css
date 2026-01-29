@@ -1,0 +1,316 @@
+.app {
+  background-color: #6394ff;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}
+
+/* Main Name Header */
+.name-header {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 350px;
+  font-weight: normal;
+  line-height: 0.8;
+  color: #faf9f6;
+  text-shadow: 20px 20px 0px black;
+  letter-spacing: 10.5px;
+  white-space: nowrap;
+  font-family: 'Zensult', Impact, 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.name-header p {
+  margin: 0;
+}
+
+/* Social Panel */
+.social-panel {
+  position: absolute;
+  left: 30px;
+  top: 626px;
+  width: 658px;
+  height: 303.55px;
+  background: white;
+  border: 4px solid black;
+  box-shadow: 16px 16px 0px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.social-icon {
+  width: 126px;
+  height: 126px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Sticky Notes */
+.sticky-notes {
+  position: absolute;
+  right: 0;
+  top: 310.5px;
+}
+
+.sticky-note {
+  position: absolute;
+  background: #ffdc83;
+  border: 4px solid black;
+  box-shadow: 16px 16px 0px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Thinking Square', 'Comic Sans MS', cursive, sans-serif;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.sticky-note:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 20px 20px 0px 0px black;
+}
+
+.sticky-note:active {
+  transform: translate(4px, 4px);
+  box-shadow: 12px 12px 0px 0px black;
+}
+
+/* Individual sticky note positions */
+.note-tron {
+  top: 0;
+  right: 540px;
+  width: 354px;
+  height: 234.5px;
+  font-size: 75px;
+  line-height: 1.11;
+  letter-spacing: 2.25px;
+}
+
+.note-yyz {
+  top: 35.5px;
+  right: 105px;
+  width: 268px;
+  height: 268px;
+  font-size: 130px;
+  line-height: 1.11;
+  letter-spacing: 3.9px;
+}
+
+.note-soft-eng {
+  top: 300.5px;
+  right: 533px;
+  width: 281px;
+  height: 281px;
+  font-size: 75px;
+  line-height: 1.11;
+  letter-spacing: 2.25px;
+}
+
+.note-logo {
+  top: 164.5px;
+  right: 0;
+  width: 455px;
+  height: 455px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-logo img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .name-header {
+    font-size: 250px;
+    left: 20px;
+  }
+
+  .social-panel {
+    left: 20px;
+    top: 460px;
+    width: 500px;
+    height: 250px;
+  }
+
+  .social-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sticky-notes {
+    top: 200px;
+    right: 20px;
+  }
+
+  .note-tron {
+    font-size: 60px;
+    width: 280px;
+    height: 190px;
+    right: 380px;
+  }
+
+  .note-yyz {
+    font-size: 100px;
+    width: 220px;
+    height: 220px;
+    right: 80px;
+  }
+
+  .note-soft-eng {
+    font-size: 60px;
+    width: 220px;
+    height: 220px;
+    right: 380px;
+  }
+
+  .note-logo {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app {
+    padding: 20px;
+  }
+
+  .name-header {
+    font-size: 180px;
+    position: relative;
+    left: 0;
+    margin-bottom: 40px;
+  }
+
+  .social-panel {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .sticky-notes {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .sticky-note {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  .note-logo img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 15px;
+  }
+
+  .name-header {
+    font-size: 120px;
+    letter-spacing: 5px;
+    text-shadow: 10px 10px 0px black;
+  }
+
+  .social-panel {
+    max-width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .social-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sticky-notes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sticky-note {
+    height: 200px !important;
+    font-size: 50px !important;
+  }
+
+  .note-tron,
+  .note-yyz,
+  .note-soft-eng {
+    font-size: 50px !important;
+  }
+
+  .note-logo img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name-header {
+    font-size: 80px;
+    letter-spacing: 3px;
+  }
+
+  .social-panel {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sticky-note {
+    height: 150px !important;
+    font-size: 40px !important;
+  }
+
+  .note-tron,
+  .note-yyz,
+  .note-soft-eng {
+    font-size: 40px !important;
+  }
+}
