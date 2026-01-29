@@ -20,8 +20,8 @@ function App() {
       <div className="
         bg-white border-brutal shadow-brutal
         flex items-center justify-center gap-10 p-10
-        absolute left-8 top-[39.125rem]
-        w-[41.125rem] h-[18.97188rem]
+        absolute left-8 top-150
+        w-[41.125rem] h-48
         max-xl:left-5 max-xl:top-[28.75rem] max-xl:w-[31.25rem] max-xl:h-[15.625rem]
         max-lg:fixed max-lg:bottom-4 max-lg:left-4 max-lg:right-4 max-lg:top-auto max-lg:w-auto max-lg:h-auto max-lg:shadow-[0.5rem_0.5rem_0_0_black] max-lg:py-138 max-lg:px-4 max-lg:gap-6
       ">
@@ -75,7 +75,7 @@ function App() {
       ">
         <StickyNote
           href="https://www.mcmaster.ca/"
-          position="absolute top-0 right-176 max-xl:right-[23.75rem] max-lg:left-2 max-lg:top-0 max-lg:right-auto"
+          position="absolute top-0 right-110 max-xl:right-[23.75rem] max-lg:left-2 max-lg:top-0 max-lg:right-auto"
           size="w-[22.125rem] h-[14.65625rem] max-xl:w-[17.5rem] max-xl:h-[11.875rem] max-lg:w-[11.5rem] max-lg:h-[9.65rem]"
           fontSize="text-[4.6875rem] leading-[1.11] tracking-[0.140625rem] max-xl:text-[3.75rem] max-lg:!text-[2.5rem]"
         >
@@ -84,8 +84,8 @@ function App() {
 
         <StickyNote
           href="https://en.wikipedia.org/wiki/Toronto"
-          position="absolute top-0 right-36 max-xl:right-5 max-lg:right-2 max-lg:top-7"
-          size="w-96 h-[16.75rem] max-xl:w-[13.75rem] max-xl:h-[13.75rem] max-lg:w-[8.75rem] max-lg:h-[8.75rem]"
+          position="absolute top-0 right-16 max-xl:right-5 max-lg:right-2 max-lg:top-7"
+          size="w-72 h-48 max-xl:w-[13.75rem] max-xl:h-[13.75rem] max-lg:w-[8.75rem] max-lg:h-[8.75rem]"
           fontSize="text-[8.125rem] leading-[1.11] tracking-[0.24375rem] max-xl:text-[6.25rem] max-lg:!text-[4.375rem]"
         >
           YYZ
@@ -93,17 +93,17 @@ function App() {
 
         <StickyNote
           href="https://x.com/@whoscado"
-          position="absolute top-90 right-12 max-xl:right-5 max-lg:right-4 max-lg:top-72"
-          size="w-120 h-[16.75rem] max-xl:w-[13.75rem] max-xl:h-[13.75rem] max-lg:w-64 max-lg:h-24"
-          fontSize="text-[8.125rem] leading-[1.11] tracking-[0.24375rem] max-xl:text-[6.25rem] max-lg:!text-[3.5rem]"
+          position="absolute top-80 right-12 max-xl:right-5 max-lg:right-4 max-lg:top-72"
+          size="w-90 h-36 max-xl:w-[13.75rem] max-xl:h-[13.75rem] max-lg:w-64 max-lg:h-24"
+          fontSize="text-[6.125rem] leading-[1.11] tracking-[0.24375rem] max-xl:text-[6.25rem] max-lg:!text-[3.5rem]"
         >
           building
         </StickyNote>
 
         <StickyNote
           href="#"
-          position="absolute top-70 right-176 max-xl:right-[23.75rem] max-lg:left-1 max-lg:top-[13.5rem] max-lg:right-auto"
-          size="w-85 h-85 max-xl:w-[13.75rem] max-xl:h-[13.75rem] max-lg:w-[12rem] max-lg:h-[12rem]"
+          position="absolute top-50 right-106 max-xl:right-[23.75rem] max-lg:left-1 max-lg:top-[13.5rem] max-lg:right-auto"
+          size="w-85 h-60 max-xl:w-[13.75rem] max-xl:h-[13.75rem] max-lg:w-[12rem] max-lg:h-[12rem]"
           fontSize="text-[6rem] leading-[1.11] tracking-[0.140625rem] max-xl:text-[3.75rem] max-lg:!text-[4.375rem]"
         >
           SOFT<br/>ENG
@@ -111,8 +111,8 @@ function App() {
 
         <StickyNote
           href="https://getconvene.com"
-          position="absolute top-32 right-86 max-lg:left-36 max-lg:top-[7.25rem]"
-          size="w-110 h-110 max-xl:w-[21.875rem] max-xl:h-[21.875rem] max-lg:w-48 max-lg:h-48"
+          position="absolute top-16 right-60 max-lg:left-36 max-lg:top-[7.25rem]"
+          size="w-80 h-80 max-xl:w-[21.875rem] max-xl:h-[21.875rem] max-lg:w-48 max-lg:h-48"
           fontSize=""
         >
           <img
