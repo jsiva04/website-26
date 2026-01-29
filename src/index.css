@@ -95,7 +95,7 @@
 }
 
 @utility text-shadow-brutal-sm {
-  text-shadow: 0.625rem 0.625rem 0 black;
+  text-shadow: 0.5rem 0.5rem 0 black;
 }
 
 @utility border-brutal {
@@ -148,6 +148,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color: #6394ff;
 }
 
 #root {
