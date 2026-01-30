@@ -9,6 +9,9 @@ import { Dithering, ImageDithering } from '@paper-design/shaders-react';
 export default function ({ onBack }) {
   return (
     <div className="[font-synthesis:none] bg-black antialiased">
+      <div className="absolute top-10 right-10 text-white text-[40px] leading-12 font-['Pixelify_Sans',system-ui,sans-serif]">
+        janahan siva
+      </div>
       <div onClick={onBack} className="cursor-pointer w-[170px] h-[170px] absolute" style={{ translate: '10px 10px' }}>
         <Dithering speed={1} shape="sphere" type="4x4" size={4} scale={0.6} frame={444269.99999996135} colorBack="#00000000" colorFront="#9D90E5" className="w-[170px] h-[170px]" />
       </div>
