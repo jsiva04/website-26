@@ -76,7 +76,7 @@ export default function ({ onBack, isLightMode, setIsLightMode }) {
               </div>
               <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0', transition: 'filter 0.5s ease' }} />
             </a>
-            <a href="https://www.mcmaster.ca" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
+            <a href="https://drive.google.com/file/d/1gvQYlYkFVXjtakgAELDVgTqaZ5Vumqqs/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
               <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
                 - software eng
               </div>
