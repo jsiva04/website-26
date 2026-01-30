@@ -22,16 +22,16 @@ export default function ({ onBack, isLightMode, setIsLightMode }) {
   }, []);
 
   return (
-    <div className={`[font-synthesis:none] antialiased min-h-screen w-full relative ${isLightMode ? 'bg-white' : 'bg-black'}`}>
+    <div className={`[font-synthesis:none] antialiased min-h-screen w-full relative transition-colors duration-500 ${isLightMode ? 'bg-white' : 'bg-black'}`}>
       {/* Header - Absolute */}
       <div className="absolute top-10 md:top-10 right-4 md:right-10 flex items-center gap-2 md:gap-4 z-50">
         <button
           onClick={() => setIsLightMode(!isLightMode)}
-          className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] cursor-pointer transition-transform duration-200 hover:translate-x-1 ${isLightMode ? 'text-black' : 'text-white'}`}
+          className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] cursor-pointer transition-all duration-500 hover:translate-x-1 ${isLightMode ? 'text-black' : 'text-white'}`}
         >
           {isLightMode ? '☀' : '☾'}
         </button>
-        <div className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`}>
+        <div className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`}>
           janahan siva
         </div>
       </div>
@@ -47,51 +47,51 @@ export default function ({ onBack, isLightMode, setIsLightMode }) {
         <div className="flex flex-col gap-8 md:gap-16 md:min-w-[400px]" style={{ paddingLeft: isMobile ? '0' : '5rem', paddingTop: isMobile ? '6rem' : '12rem' }}>
           {/* Current Section */}
           <div className="flex flex-col gap-4">
-            <div className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '1rem' : '0' }}>
+            <div className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '1rem' : '0' }}>
               current
             </div>
             <a href="https://getconvene.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
-              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
+              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
                 - convene
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0' }} />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0', transition: 'filter 0.5s ease' }} />
             </a>
             <a href="https://www.mcmaster.ca" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
-              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
+              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
                 - tron @ mac
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0' }} />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0', transition: 'filter 0.5s ease' }} />
             </a>
             <a href="https://www.mcmaster.ca" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
-              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
+              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
                 - software eng
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0' }} />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0', transition: 'filter 0.5s ease' }} />
             </a>
           </div>
 
           {/* Links Section */}
           <div className="flex flex-col gap-4">
-            <div className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '1rem' : '0' }}>
+            <div className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '1rem' : '0' }}>
               links
             </div>
             <a href="https://www.github.com/jsiva04" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
-              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
+              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
                 - github
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0' }} />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0', transition: 'filter 0.5s ease' }} />
             </a>
             <a href="https://www.linkedin.com/in/jan-siva" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
-              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
+              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
                 - linkedin
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0' }} />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0', transition: 'filter 0.5s ease' }} />
             </a>
             <a href="mailto:sivanj1@mcmaster.ca" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
-              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
+              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`} style={{ paddingLeft: isMobile ? '2rem' : '0' }}>
                 - email
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0' }} />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none', marginRight: isMobile ? '1rem' : '0', transition: 'filter 0.5s ease' }} />
             </a>
           </div>
         </div>
