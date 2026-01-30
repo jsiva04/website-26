@@ -175,8 +175,21 @@
   }
 }
 
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
 @utility animate-pulse-fade {
   animation: fade 4s ease-in-out infinite;
+}
+
+@utility animate-pulse-scale {
+  animation: scale 3s ease-in-out infinite;
 }
 
 * {
