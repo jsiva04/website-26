@@ -1,4 +1,5 @@
 /** @paper-design/shaders-react@0.0.71 */
+import { useState, useEffect } from 'react';
 import { Dithering, ImageDithering } from '@paper-design/shaders-react';
 
 /**
@@ -7,10 +8,23 @@ import { Dithering, ImageDithering } from '@paper-design/shaders-react';
  * on Jan 30, 2026
  */
 export default function ({ onBack, isLightMode, setIsLightMode }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <div className={`[font-synthesis:none] antialiased min-h-screen w-full relative ${isLightMode ? 'bg-white' : 'bg-black'}`}>
       {/* Header - Absolute */}
-      <div className="absolute top-4 md:top-10 right-4 md:right-10 flex items-center gap-2 md:gap-4 z-50">
+      <div className="absolute top-10 md:top-10 right-4 md:right-10 flex items-center gap-2 md:gap-4 z-50">
         <button
           onClick={() => setIsLightMode(!isLightMode)}
           className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] cursor-pointer transition-transform duration-200 hover:translate-x-1 ${isLightMode ? 'text-black' : 'text-white'}`}
@@ -30,29 +44,29 @@ export default function ({ onBack, isLightMode, setIsLightMode }) {
       {/* Main Content - Flow Layout */}
       <div className="px-4 md:px-10 pt-28 md:pt-[200px] pb-8 flex flex-col md:flex-row gap-8 md:gap-16">
         {/* Left Column - Current and Links */}
-        <div className="flex flex-col gap-8 md:gap-16 md:min-w-[400px]">
+        <div className="flex flex-col gap-8 md:gap-16 md:min-w-[400px]" style={{ paddingLeft: isMobile ? '0' : '5rem', paddingTop: isMobile ? '8rem' : '12rem' }}>
           {/* Current Section */}
           <div className="flex flex-col gap-4">
             <div className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`}>
               current
             </div>
             <a href="https://getconvene.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
-              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`}>
+              <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'} ${isMobile ? 'left-2' : ''}`}>
                 - convene
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none' }} />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
               <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`}>
                 - tron @ mac
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none' }} />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
               <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`}>
                 - software eng
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none' }} />
             </a>
           </div>
 
@@ -65,19 +79,19 @@ export default function ({ onBack, isLightMode, setIsLightMode }) {
               <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`}>
                 - github
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none' }} />
             </a>
             <a href="https://www.linkedin.com/in/jan-siva" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
               <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`}>
                 - linkedin
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none' }} />
             </a>
             <a href="mailto:sivanj1@mcmaster.ca" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between transition-transform duration-200 hover:translate-x-1">
               <div className={`text-xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] ${isLightMode ? 'text-black' : 'text-white'}`}>
                 - email
               </div>
-              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" />
+              <img src="/assets/arrow.png" alt="" className="w-4 h-4 md:w-5 md:h-5" style={{ filter: isLightMode ? 'invert(1)' : 'none' }} />
             </a>
           </div>
         </div>
@@ -96,6 +110,7 @@ export default function ({ onBack, isLightMode, setIsLightMode }) {
             colorBack="#00000000"
             colorFront="#9D90E5"
             className="w-full h-full animate-pulse-fade rounded-lg"
+            style={{ marginTop: isMobile ? '0' : '8rem' }}
           />
         </div>
       </div>
