@@ -27,9 +27,23 @@ export default function ({ onBack, isLightMode, setIsLightMode }) {
       <div className="absolute top-10 md:top-10 right-4 md:right-10 flex items-center gap-2 md:gap-4 z-50">
         <button
           onClick={() => setIsLightMode(!isLightMode)}
-          className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] cursor-pointer transition-all duration-500 hover:translate-x-1 ${isLightMode ? 'text-black' : 'text-white'}`}
+          className={`cursor-pointer transition-all duration-500 hover:translate-x-1 ${isLightMode ? 'text-black' : 'text-white'}`}
         >
-          {isLightMode ? '☀' : '☾'}
+          {isLightMode ? (
+            <svg className="w-6 h-6 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          ) : (
+            <span className="text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif]">☾</span>
+          )}
         </button>
         <div className={`text-2xl md:text-[40px] leading-tight md:leading-12 font-['Pixelify_Sans',system-ui,sans-serif] transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`}>
           janahan siva
